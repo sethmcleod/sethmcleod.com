@@ -1,0 +1,75 @@
+// ***********************************
+// VARIABLES
+// ***********************************
+
+@import url('http://fonts.googleapis.com/css?family=Bitter:400,700,400italic');
+//font-family: 'Bitter', serif;
+
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic');
+//font-family: 'Roboto', sans-serif;
+
+
+// LAYOUT
+$container: 1024px;
+$break-menu: 767px;
+
+
+// TYPOGRAPHY
+$font-family-title: 'Roboto', sans-serif;
+$font-family-primary: 'Roboto', sans-serif;  // "Helvetica Neue",Helvetica,Arial,sans-serif
+$font_mono: 10px 'Monaco', monospace;
+$font-weight-title: 400;
+$font-weight-body: 300;
+
+$font-size: 100%; 
+$line-height: 1.625; 
+$font-size-mobile: 100%; 
+$line-height-mobile: 1.625;
+
+$site-title: 2.2em; 
+$entry-title: 2.5em;
+$h1: 2.5em;
+$h2: 1.4em;
+$h3: 1.4em;
+$h4: 1.2em;
+$h5: 1em;
+$h6: .8em;
+
+
+// COLORS
+$white: #fff;
+$black: #3a3a3a; 
+$grey: #ccc;
+$grey-light: lighten( $grey, 16% );
+$grey-dark: darken( $grey, 20% );
+
+$color-body-bg: $grey-light; 
+$color1: #dd4b39;  // red
+$color2: #9CBE26;  // green
+
+$body-text: #333333;
+
+$link_color: $color1;
+$link_hover: darken( $color1, 50% );
+
+$button-color: $color1;
+$button-color-hover: darken( $button-color, 10% );
+$button-color-disabled: $button-color;
+
+$nav-bg: #333333; //bar background    
+$nav-interior-bg: #262626; //interior li a
+$nav-link-hover: #00AEEF; //blue
+$nav-text: #444444;
+$nav-text-active: #fff;
+
+$notification-message: #0196bb;
+$notification-success: #9abb01;
+$notification-warning: #DD8903;
+$notification-alert: #CF493B;
+
+$panel: $grey-light;
+$panel-callout: $grey-light;
+
+
+// Other
+$default-border-radius: 5px;

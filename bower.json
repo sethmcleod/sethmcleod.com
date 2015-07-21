@@ -1,0 +1,21 @@
+{
+  "name": "sethmcleod.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sethmcleod/sethmcleod",
+  "authors": [
+      "Seth Mcleod <me@sethmcleod.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "breakpoint-sass": "~2.6.1",
+    "susy": "~2.2.5"
+  }
+}

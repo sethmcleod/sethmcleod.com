@@ -1,0 +1,29 @@
+// ***********************************
+// TABLES
+// ***********************************
+
+
+td, th {
+    border: 4px solid $white;
+    padding: 7px 20px;
+}
+
+th{
+	background: $grey-light;
+}
+
+td{
+	font-size: .9em;
+
+	&:hover{
+		background: darken( $grey-light, 3% );
+		@include transition-all(.3s);
+	}
+}
+
+tr{
+	&:nth-child(odd) {
+		background-color: $grey-light;
+
+	}
+}

@@ -1,0 +1,56 @@
+// ***********************************
+// NOTIFICATIONS
+// ***********************************
+
+.notification{
+	padding: 40px;
+	margin: 20px;
+
+	span{
+		font-weight: bold;
+		font-size: 1.5em;
+		display: block;
+		padding-bottom: 20px;
+	}
+}
+
+.notification.message{
+	background: $notification-message;
+	color: $white;
+	// border: 1px solid darken( $notification-message, 10% );
+}
+
+.notification.success{
+	background: $notification-success;
+	color: $white;
+	// border: 1px solid darken( $notification-success, 10% );
+}
+
+.notification.warning{
+	background: $notification-warning;
+	color: $white;
+	// border: 1px solid darken( $notification-warning, 10% );
+}
+
+.notification.alert{
+	background: $notification-alert;
+	color: $white;
+	// border: 1px solid darken( $notification-alert, 10% );
+}
+
+
+
+// ***********************************
+// PANELS
+// ***********************************
+
+.panel{
+	padding: 40px;
+	margin: 20px;
+	background: $panel;
+}
+
+.panel.callout{
+	background: $color1;
+	color: $white;
+}

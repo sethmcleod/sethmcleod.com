@@ -1,0 +1,68 @@
+// ***********************************
+// BASE
+// ***********************************
+
+body{
+	color: $body-text;
+	margin: 0;
+	padding: 0;
+	background: $color-body-bg;
+	line-height: $line-height-mobile;
+	font-family: $font-family-primary;
+	font-size: $font-size-mobile;
+	font-size: $line-height-mobile;
+	font-weight: $font-weight-body;
+
+	@include breakpoint($break-menu){
+		font-size: $font-size;
+		line-height: $line-height;
+	}
+}
+
+
+// ***********************************
+// PAGE STRUCTURE
+// ***********************************
+
+//Susy Maps
+$susy: (
+	columns: 12,
+	gutters: 1/2,
+	math: fluid,
+	gutter-position: inside,
+);
+
+#header, #content, .page{
+	overflow: hidden;  // clearfix
+}
+
+.page{
+	@include container($container);
+	background: $white;
+	padding: 0 3%;
+} // page
+
+#header{
+	background: $grey-light;
+
+	#header-wrapper{
+		@include span(12);
+	}	
+} // #header
+
+#content{
+	#primary{
+		@include span(12);
+		@include breakpoint($break-menu) {
+		    @include span(8);
+		 }
+	}
+
+	#aside{
+		@include span(12);
+		@include breakpoint($break-menu) {
+		    @include span(4);
+		 }
+	}	
+} // content
+
