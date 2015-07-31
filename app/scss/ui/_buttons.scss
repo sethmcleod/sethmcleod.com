@@ -17,8 +17,8 @@ button {
     font-weight: normal;
     border: 0 none;
     margin-top: 0 5px;
-	font-size: 14px;
-	@include fade;
+    font-size: 14px;
+    @include fade;
     font-weight: $font-weight-body;
     font-family: $font-family-title;
     text-transform: capitalize;
@@ -57,5 +57,3 @@ input[type=submit][disabled=disabled], button[disabled=disabled], a.disabled, .b
 	background: $button-color;
 	color: #fff !important;
 }
-
-
