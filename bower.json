@@ -12,10 +12,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "breakpoint-sass": "~2.6.1",
-    "susy": "~2.2.5"
-  }
+  ]
 }
