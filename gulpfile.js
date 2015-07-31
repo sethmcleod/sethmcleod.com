@@ -27,6 +27,7 @@ var config = {
 // // /////////////////////////////////////////////
 
 var gulp = require('gulp'),
+    jade = require('gulp-jade');
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	autoprefixer = require('gulp-autoprefixer'),
@@ -90,6 +91,15 @@ gulp.task('styles', function() {
 
 gulp.task('html', function(){
     gulp.src('app/**/*.html')
+    .pipe(reload({stream:true}));
+});
+
+gulp.task('jade', function() {
+    gulp.src('app/jade/**/*.jade')
+    .pipe(jade({
+        pretty: true
+    }))
+    .pipe(gulp.dest('app/'))
     .pipe(reload({stream:true}));
 });
 
