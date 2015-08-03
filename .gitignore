@@ -36,3 +36,5 @@ app/bower_components/
 build/
 dist/
 maps/
+
+app/index.html

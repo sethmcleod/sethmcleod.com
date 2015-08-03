@@ -117,7 +117,7 @@ gulp.task('build:serve', function() {
 gulp.task ('watch', function(){
 	gulp.watch('app/scss/**/*.scss', ['styles']);
 	gulp.watch('app/js/**/*.js', ['scripts']);
-	gulp.watch('app/**/*.html', ['html']);
+	gulp.watch('app/**/*.jade', ['jade']);
 });
 
 
