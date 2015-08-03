@@ -1,8 +1,17 @@
 - var pageTitle = 'Home'
+- var subheading = 'Welcome to my site'
+- var heading = 'Home'
 
 doctype html
 html(lang="en")
   include includes/head
   body
-    include includes/header
-    include includes/footer
+    include includes/side-nav
+    #wrapper
+      include includes/header
+      main(id="page" role="main")
+        #content
+          include includes/banner
+          section.page-content
+      include includes/footer
+    include includes/scripts
