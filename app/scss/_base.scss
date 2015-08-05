@@ -10,7 +10,7 @@ body{
 	line-height: $line-height-mobile;
 	font-family: $font-family-primary;
 	font-size: $font-size-mobile;
-	font-size: $line-height-mobile;
+	// font-size: $line-height-mobile;
 	font-weight: $font-weight-body;
 
 	@include breakpoint($break-menu){
@@ -32,9 +32,9 @@ $susy: (
 	gutter-position: inside,
 );
 
-#header, #content, .page{
+/* #header, #content, .page{
 	overflow: hidden;  // clearfix
-}
+} */
 
 .page{
 	@include container($container);
@@ -42,13 +42,13 @@ $susy: (
 	padding: 0 3%;
 } // page
 
-#header{
+/* #header{
 	background: $grey-light;
 
 	#header-wrapper{
 		@include span(12);
-	}	
-} // #header
+	}
+} // #header */
 
 #content{
 	#primary{
@@ -63,6 +63,5 @@ $susy: (
 		@include breakpoint($break-menu) {
 		    @include span(4);
 		 }
-	}	
+	}
 } // content
-

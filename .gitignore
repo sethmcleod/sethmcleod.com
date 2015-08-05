@@ -26,7 +26,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
+*.psd
 
 # Build Systems #
 #################

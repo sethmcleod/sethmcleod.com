@@ -10,6 +10,7 @@ var config = {
 		'build/jade',
 		'build/js/!(*.min.js)',
 		'build/bower.json',
+		'build/**/*.psd',
 		'build/bower_components/',
 		'build/maps/',
 		'build/scss/'
@@ -65,7 +66,7 @@ gulp.task('scripts', function() {
 // Styles Tasks
 // ///////////////////////////////////////////////
 
-gulp.task('styles', function() {
+gulp.task('base', function() {
 	gulp.src('app/scss/style.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass({outputStyle: 'compressed'}))
@@ -74,8 +75,19 @@ gulp.task('styles', function() {
 		browsers: ['last 3 versions'],
 		cascade: false
 	}))
+	.pipe(rename('base.css'))
 	.pipe(sourcemaps.write('../maps'))
-	.pipe(gulp.dest('app/css/'))
+	.pipe(gulp.dest('app/css'))
+	.pipe(reload({stream:true}));
+});
+
+gulp.task('style', function() {
+	gulp.src('app/css/style.css')
+	.pipe(autoprefixer({
+		browsers: ['last 3 versions'],
+		cascade: false
+	}))
+	.pipe(gulp.dest('app/css'))
 	.pipe(reload({stream:true}));
 });
 
@@ -115,7 +127,8 @@ gulp.task('build:serve', function() {
 });
 
 gulp.task ('watch', function(){
-	gulp.watch('app/scss/**/*.scss', ['styles']);
+	gulp.watch('app/css/style.css', ['style']);
+	gulp.watch('app/scss/**/*.scss', ['base']);
 	gulp.watch('app/js/**/*.js', ['scripts']);
 	gulp.watch('app/**/*.jade', ['jade']);
 });
@@ -147,6 +160,6 @@ gulp.task('build', ['build:copy', 'build:remove']);
 // Main Tasks
 // ////////////////////////////////////////////////
 
-gulp.task('compile', ['scripts', 'styles', 'jade']);
+gulp.task('compile', ['scripts', 'base', 'style', 'jade']);
 
-gulp.task('default', ['scripts', 'styles', 'jade', 'serve', 'watch']);
+gulp.task('default', ['scripts', 'base', 'style', 'jade', 'serve', 'watch']);
