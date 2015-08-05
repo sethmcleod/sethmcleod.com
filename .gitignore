@@ -38,3 +38,6 @@ dist/
 maps/
 
 app/index.html
+app/about.html
+app/contact.html
+app/resume.html
