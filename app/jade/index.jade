@@ -6,12 +6,16 @@ doctype html
 html(lang="en")
   include includes/head
   body
-    //- include includes/side-nav
+    include includes/side-nav
     #wrapper
       include includes/header
       main(id="page" role="main")
         #content
           include includes/banner
-          section.page-content
+          section.page-content.centered
+            h1 Hello there
+            p My name is Seth Mcleod. I'm an experienced front end developer and web designer. Addicted to learning new things.
+            hr
+            p This site is currently a work in progress, which I'm refining and updating every day. Like what you see? You can check out the source code on #[a(href="https://github.com/sethmcleod/sethmcleod.com" target="_blank") GitHub].
       include includes/footer
     include includes/scripts
