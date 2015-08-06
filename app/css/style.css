@@ -163,11 +163,11 @@ header {
   color: #fff;
 }
 #mobile-nav ul li:last-child {
-  margin: 1.2em 0;
+  margin: 1em 0;
 }
 #mobile-nav ul li:last-child a {
   border: 2px solid #fff;
-  padding: .75em 1.5em;
+  padding: .6em 1.5em;
   transition: background .1s 0s ease-in-out, color .1s 0s ease-in-out;
 }
 #mobile-nav ul li:last-child a:hover, #main-nav ul li:last-child a:focus {
@@ -399,7 +399,7 @@ nav.footer a:hover, nav.footer a:focus {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 820px) {
   #main-nav {
     display: none;
   }
@@ -440,7 +440,7 @@ nav.footer a:hover, nav.footer a:focus {
 
 @media (min-width: 641px) {
   .banner {
-    padding: 180px 0 140px;
+    padding: 160px 0 100px;
   }
   .banner .description em {
     font-size: 20px;
@@ -455,8 +455,8 @@ nav.footer a:hover, nav.footer a:focus {
   }
 }
 
-@media (min-width: 861px) {
-  #toggle {
+@media (min-width: 821px) {
+  .mobile-toggle {
     display: none;
   }
   .third {

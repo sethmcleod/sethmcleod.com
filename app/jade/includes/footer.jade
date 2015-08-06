@@ -6,15 +6,16 @@ footer
     .back-to-top
       a(href="#header") Back to Top
     .footer-logo
-      img(src="/img/logo.png")
+      a(href="#header")
+        img(src="/img/logo.png")
     .footer-nav
       nav.footer
         +nav-item('Home', '/')
         //- +nav-item('Projects', '/projects')
         //- +nav-item('Blog', '/blog')
-        +nav-item('About', '/about')
+        //- +nav-item('About', '/about.html')
         +nav-item('Resume', '/resume')
-        +nav-item('Contact', '/contact')
+        //- +nav-item('Contact', '/contact.html')
     .copyright
       small &copy; 2015&nbsp;Seth Mcleod.&nbsp;All rights reserved.
     .footer-social

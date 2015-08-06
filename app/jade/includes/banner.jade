@@ -1,13 +1,13 @@
 section.banner
   .overlay
-  figure.thumnail(style="background: url('/img/banner-"+pageTitle.toLowerCase()+".jpg') 40% / cover")
+  figure.thumnail(style="background: url('/img/banner-home.jpg') 40% / cover")
+  //- figure.thumnail(style="background: url('/img/banner-"+pageTitle.toLowerCase()+".jpg') 40% / cover")
   .description
     p
       em= subheading
     p
       strong= heading
-    if (pageTitle == 'Home')
+    if (pageTitle == 'Test')
       p
-        a(href="/resume") Resume
-        &nbsp;
-        a(href="/contact") Contact
+        a.btn(href="/resume") Resume
+        a.btn(href="/contact") Contact

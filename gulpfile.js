@@ -11,6 +11,7 @@ var config = {
 		'build/js/!(*.min.js)',
 		'build/bower.json',
 		'build/**/*.psd',
+		'build/img/favicon.png',
 		'build/bower_components/',
 		'build/maps/',
 		'build/scss/'
