@@ -28,6 +28,11 @@ a, a:visited {
     color: #333;
     font-weight: 400;
 }
+.row:before, .row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
 .centered {
   text-align: center;
 }
@@ -453,5 +458,9 @@ nav.footer a:hover, nav.footer a:focus {
 @media (min-width: 861px) {
   #toggle {
     display: none;
+  }
+  .third {
+    float: left;
+    width: 33%;
   }
 }
