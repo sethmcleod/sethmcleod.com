@@ -233,7 +233,7 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,.6);
   z-index: 99;
 }
 .banner figure {
@@ -258,15 +258,15 @@ header {
   font-size: 18px;
   padding: 10px 0;
   margin-bottom: 0;
-  line-height: 1.5em;
+  line-height: 1em;
   text-transform: none;
   letter-spacing: 1px;
   font-weight: 400;
   color: #fff;
 }
 .banner .description strong {
-  font-size: 30px;
-  letter-spacing: 2px;
+  font-size: 2em;
+  letter-spacing: .02em;
   text-transform: uppercase;
 }
 .banner .description p:last-child a:last-child {
@@ -440,15 +440,15 @@ nav.footer a:hover, nav.footer a:focus {
 
 @media (min-width: 641px) {
   .banner {
-    padding: 160px 0 100px;
+    padding: 140px 0 100px;
   }
   .banner .description em {
-    font-size: 20px;
+    font-size: 1.3em;
   }
   .banner .description strong {
-    font-size: 60px;
+    font-size: 3.3em;
     line-height: 1;
-    letter-spacing: 4px;
+    letter-spacing: .06em;
   }
   .banner .description p:last-child a:last-child {
     margin-left: 1em;
