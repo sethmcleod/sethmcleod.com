@@ -1,3 +1,2 @@
-# Personal Site
-
-Built with Gulp, Jade, Sass, SourceMaps, Browser-Sync, Autoprefixer and Uglify. 
+# Personal Portfolio
+Built with Gulp, Jade, and Sass. Using awesome tools like Browser-Sync, SourceMaps, Autoprefixer and Uglify.
