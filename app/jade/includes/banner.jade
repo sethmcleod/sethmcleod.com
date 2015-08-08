@@ -1,7 +1,19 @@
+mixin color-overlay()
+  case pageTitle
+    when "Home"
+      .overlay.blue-green
+    when "About"
+      .overlay.pink-orange
+    when "Resume"
+      .overlay.purple-blue
+    when "Contact"
+      .overlay.green-yellow
+    default
+      .overlay
+
 section.banner
-  .overlay
-  figure.thumnail(style="background: url('/img/banner-home.jpg') 40% / cover")
-  //- figure.thumnail(style="background: url('/img/banner-"+pageTitle.toLowerCase()+".jpg') 40% / cover")
+  +color-overlay()
+  figure.thumnail(style="background: url('/img/banner-"+ pageTitle.toLowerCase() +".jpg') center 0% / cover no-repeat;")
   .description
     p
       em= subheading
