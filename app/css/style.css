@@ -401,6 +401,11 @@ nav.footer a, nav.social a {
 nav.footer a:hover, nav.footer a:focus {
   color: #fff;
 }
+.color-bar {
+  height: 10px;
+  opacity: .7;
+}
+
 
 @media (max-width: 640px) {
   #header-inner {
@@ -488,14 +493,12 @@ nav.footer a:hover, nav.footer a:focus {
   background: linear-gradient(45deg, #134e5e 10%, #71b280 80%);
 }
 .green-yellow {
-  opacity: .5;
   background: linear-gradient(45deg, #338C4E 10%, #E2D96F 90%);
 }
 .purple-blue {
   background: linear-gradient(45deg, #5f2c82 10%, #49a09d 80%);
 }
 .pink-orange {
-  opacity: .5;
   background: linear-gradient(45deg, #dd2476 10%, #ff512f 70%);
 }
 
