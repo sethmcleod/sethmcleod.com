@@ -359,11 +359,37 @@ ul {
   text-align: center;
   padding: 2em 0;
 }
-.images img {
-  display: inline;
+.images a {
+  display: inline-block;
   width: 46%;
   max-width: 160px;
   margin: 0 10px 10px 0;
+}
+.images figure {
+  position: relative;
+  overflow: hidden;
+}
+.images .overlay {
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  background: url('/img/svg/instagram.svg') 50% / 40px no-repeat, rgba(0,0,0,.5);
+}
+.images figure object {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  height: 30px;
+  margin: auto;
+  position: absolute;
+}
+.images a:hover .overlay, .images a:focus .overlay {
+  opacity: 1;
+}
+.images a:hover figure img, .images a:focus figure img {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 
 /* Page Content */
@@ -425,7 +451,7 @@ nav.footer a:hover, nav.footer a:focus {
 }
 
 @media (max-width: 547px) {
-  .images img:nth-of-type(even) {
+  .images a:nth-of-type(even) {
     margin-right: 0;
   }
 }
@@ -502,7 +528,7 @@ nav.footer a:hover, nav.footer a:focus {
   .banner .description p:last-child a:last-child {
     margin-left: 1em;
   }
-  .images img {
+  .images a {
     max-width: 145px;
   }
   .page-content.centered p {
@@ -522,9 +548,12 @@ nav.footer a:hover, nav.footer a:focus {
     width: 700px;
     margin: auto;
   }
-  .images img {
+  .images a {
     width: 160px;
     margin: 0 15px 15px 0;
+  }
+  .images figure object {
+    height: 40px;
   }
 }
 
@@ -536,7 +565,7 @@ nav.footer a:hover, nav.footer a:focus {
 
 /* Colors */
 .blue-green {
-  background: linear-gradient(45deg, #134e5e 10%, #71b280 80%);
+  background: linear-gradient(45deg, #2072AB 10%, #71b280 80%);
 }
 .green-yellow {
   background: linear-gradient(45deg, #338C4E 10%, #E2D96F 90%);
