@@ -281,8 +281,26 @@ header {
   color: rgba(255,255,255,.7);
   transition: color .1s 0s ease-in-out;
 }
+#main-nav li a:after {
+  transition: all .2s ease;
+  left: 50%;
+  display: block;
+  margin-left: 0;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 6px;
+  background: #fff;
+  content: '';
+}
 #main-nav li a:hover, #main-nav li a:focus {
   color: #fff;
+}
+#main-nav li a:hover:after, #main-nav li a:focus:after {
+  bottom: 5px;
+  height: 2px;
+  width: 50px;
+  margin-left: -25px;
 }
 #main-nav ul li:last-child a {
   color: #fff;
@@ -418,6 +436,7 @@ footer {
 }
 .back-to-top {
   padding: 1.5em 0;
+  position: relative;
 }
 .footer-logo, .footer-nav {
   padding: 1em 0;
@@ -430,15 +449,43 @@ footer {
 .back-to-top a {
   color: #fff;
 }
+.back-to-top a:after {
+  transition: all .2s ease;
+  left: 50%;
+  display: block;
+  margin-left: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  background: #fff;
+  content: '';
+}
+.back-to-top a:hover:after, .back-to-top li a:focus:after {
+  height: 1px;
+  width: 60px;
+  margin-top: 4px;
+  margin-left: -30px;
+}
 .footer-logo img {
   width: 60px;
 }
 nav.footer {
   line-height: 1.4;
 }
+nav.social a {
+  height: 20px;
+  width: 20px;
+  transition: opacity .1s 0s ease-in-out;
+  background: url('/img/svg/mail.svg') bottom / cover no-repeat;
+}
+nav.social a:hover, nav.social a:focus {
+  opacity: .7;
+}
 nav.footer a, nav.social a {
-  padding: 0 .5em;
+  margin: 0 .5em;
   display: inline-block;
+}
+nav.footer a {
   color: rgba(255,255,255,.7);
   transition: color .1s 0s ease-in-out;
 }
