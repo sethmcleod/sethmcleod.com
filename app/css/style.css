@@ -281,7 +281,7 @@ header {
   color: rgba(255,255,255,.7);
   transition: color .1s 0s ease-in-out;
 }
-#main-nav li a:after {
+#main-nav li:not(:last-child) a:after {
   transition: all .2s ease;
   left: 50%;
   display: block;
@@ -296,7 +296,7 @@ header {
 #main-nav li a:hover, #main-nav li a:focus {
   color: #fff;
 }
-#main-nav li a:hover:after, #main-nav li a:focus:after {
+#main-nav li:not(:last-child) a:hover:after, #main-nav li:not(:last-child) a:focus:after {
   bottom: 5px;
   height: 2px;
   width: 50px;
