@@ -392,16 +392,6 @@ ul {
   transition: opacity .2s ease-in-out;
   background: url('/img/svg/instagram.svg') 50% / 40px no-repeat, rgba(0,0,0,.5);
 }
-.images figure object {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  height: 30px;
-  margin: auto;
-  position: absolute;
-}
 .images a:hover .overlay, .images a:focus .overlay {
   opacity: 1;
 }
