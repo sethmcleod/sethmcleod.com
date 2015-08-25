@@ -525,7 +525,6 @@ nav.footer a:hover, nav.footer a:focus {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
     cursor: e-resize;
     -webkit-transform: translatex(-220px) translatez(0);
     -ms-transform: translatex(-220px) translatez(0);
