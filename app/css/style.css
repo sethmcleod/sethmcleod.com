@@ -3,6 +3,7 @@
 
 /* Misc */
 body {
+  font-size: 16px;
   background-color: #1f1f1f;
 }
 em, h1 {
@@ -16,6 +17,7 @@ hr {
   background-color: #CCC;
 }
 p {
+  font-size: 1em;
   margin-bottom: 0;
   padding-bottom: 1.5em;
 }
@@ -368,7 +370,7 @@ h4 {
   padding: .5em 0 1em;
 }
 ul {
-  padding: 1em .5em;
+  padding: 18px 10px;
 }
 
 /* Images */
@@ -463,8 +465,8 @@ nav.footer {
   line-height: 1.4;
 }
 nav.social a {
-  height: 20px;
-  width: 20px;
+  height: 1.5em;
+  width: 1.5em;
   transition: opacity .1s 0s ease-in-out;
   background: url('/img/svg/mail.svg') bottom / cover no-repeat;
 }
@@ -547,6 +549,9 @@ nav.footer a:hover, nav.footer a:focus {
 }
 
 @media (min-width: 641px) {
+  body {
+    font-size: 18px;
+  }
   .banner {
     padding: 140px 0 100px;
   }
@@ -594,6 +599,9 @@ nav.footer a:hover, nav.footer a:focus {
 }
 
 @media (min-width: 1000px) {
+  body {
+    font-size: 20px;
+  }
   .page-content.centered p {
     padding: 0 15% 1.5em;
   }
