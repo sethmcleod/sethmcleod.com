@@ -16,6 +16,12 @@ hr {
   margin: 2em 0;
   background-color: #CCC;
 }
+pre {
+  background: #ededed;
+  font-size: 12px;
+  max-width: 500px;
+  margin: auto;
+}
 p {
   font-size: 1em;
   margin-bottom: 0;
