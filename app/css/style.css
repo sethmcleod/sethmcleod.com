@@ -54,7 +54,7 @@ a, a:visited {
 
 /* Banner */
 .banner {
-  padding: 60px 0 20px;
+  padding: 50px 0 0;
   background-color: #000;
   position: relative;
   overflow: hidden;
@@ -64,7 +64,7 @@ a, a:visited {
   -webkit-font-smoothing: antialiased;
 }
 .banner.small {
-  padding: 40px 0 20px;
+    padding: 20px 0 0;
 }
 .overlay {
   position: absolute;
@@ -352,16 +352,15 @@ a.btn.dark:hover, a.btn.dark:focus {
 }
 
 /* Typography */
-h1, h2 {
-  padding: 1em 0 .5em;
-}
 h1 {
   text-transform: initial;
+  padding: 1em 0 1em;
   font-size: 1.6em;
 }
 h2 {
   text-transform: uppercase;
   font-weight: 400;
+  padding: 1em 0 .5em;
   letter-spacing: 1px;
   font-size: 1.2em;
   line-height: 1;
@@ -414,7 +413,9 @@ ul {
   max-width: 1020px;
   margin: 0 auto;
 }
-
+.page-content p {
+  text-align: justify;
+}
 
 /* Footer */
 footer {
@@ -559,10 +560,10 @@ nav.footer a:hover, nav.footer a:focus {
     font-size: 18px;
   }
   .banner {
-    padding: 140px 0 100px;
+    padding: 120px 0 60px;
   }
   .banner.small {
-    padding: 100px 0;
+    padding: 80px 0;
   }
   .banner .description em {
     font-size: 1.3em;
