@@ -6,3 +6,25 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
 </ifmodule>
+
+# BEGIN CACHING
+# Turn on Expires and set default to 0
+ExpiresActive On
+ExpiresDefault A0
+
+# Set up caching on media files for 1 year (forever?)
+ExpiresDefault A29030400
+Header append Cache-Control "public"
+
+# Set up caching on media files for 1 week
+ExpiresDefault A604800
+Header append Cache-Control "public"
+
+# Set up 2 Hour caching on commonly updated files
+ExpiresDefault A7200
+Header append Cache-Control "proxy-revalidate"
+
+# Force no caching for dynamic files
+ExpiresActive Off
+Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+Header set Pragma "no-cache"
