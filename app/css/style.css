@@ -9,6 +9,9 @@ body {
 em, h1 {
   font-family: 'Droid Serif', serif;
 }
+header, aside {
+  display: block;
+}
 object {
   pointer-events: none;
 }
