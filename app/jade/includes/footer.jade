@@ -1,21 +1,8 @@
 mixin nav-item(name, url)
   a(href=url)= name
-  
-mixin color-bar()
-  case pageTitle
-    when "Home"
-      .color-bar.blue-green
-    when "About"
-      .color-bar.pink-orange
-    when "Resume"
-      .color-bar.purple-blue
-    when "Contact"
-      .color-bar.green-yellow
-    default
-      .color-bar
       
 footer
-  +color-bar()
+  .color-bar
   .footer-inner
     .back-to-top
       a(href="#header") Back to Top
