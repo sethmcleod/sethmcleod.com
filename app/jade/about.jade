@@ -7,10 +7,9 @@ include includes/ascii.html
 doctype html
 html(lang="en")
   include includes/head
-  body
     include includes/side-nav
+    include includes/header
     #wrapper
-      include includes/header
       main(id="page" role="main")
         #content
           include includes/banner
@@ -54,7 +53,7 @@ html(lang="en")
                   .overlay
                   img(src="/img/insta/8.jpg")
           section.banner.small
-            +color-overlay()
+            .overlay
             figure.thumnail(style="background: url('/img/banner-menuat.jpg') center 90% / cover no-repeat;")
             .description
               p
