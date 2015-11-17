@@ -54,6 +54,12 @@ a, a:visited {
   display: none !important;
   visibility: hidden;
 }
+#code-mentor {
+  padding-top: 15px;
+}
+#code-mentor a {
+  display: inline-block;
+}
 
 /* Banner */
 .banner {
