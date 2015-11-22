@@ -24,8 +24,7 @@ var config = {
 // ////////////////////////////////////////////////
 
 var gulp = require('gulp'),
-	jade = require('gulp-jade');
-	sass = require('gulp-sass'),
+	jade = require('gulp-jade'),
 	sourcemaps = require('gulp-sourcemaps'),
 	autoprefixer = require('gulp-autoprefixer'),
 	browserSync = require('browser-sync'),
@@ -67,27 +66,13 @@ gulp.task('scripts', function() {
 // Styles Tasks
 // ///////////////////////////////////////////////
 
-gulp.task('base', function() {
-	gulp.src('app/scss/style.scss')
-	.pipe(sourcemaps.init())
-	.pipe(sass({outputStyle: 'compressed'}))
-	.on('error', errorlog)
-	.pipe(autoprefixer({
-		browsers: ['last 3 versions'],
-		cascade: false
-	}))
-	.pipe(rename('base.css'))
-	.pipe(sourcemaps.write('../maps'))
-	.pipe(gulp.dest('app/css'))
-	.pipe(reload({stream:true}));
-});
-
 gulp.task('style', function() {
 	gulp.src('app/css/style.css')
 	.pipe(autoprefixer({
 		browsers: ['last 3 versions'],
 		cascade: false
 	}))
+	.pipe(sourcemaps.write('../maps'))
 	.pipe(gulp.dest('app/css'))
 	.pipe(reload({stream:true}));
 });
@@ -129,7 +114,6 @@ gulp.task('build:serve', function() {
 
 gulp.task ('watch', function(){
 	gulp.watch('app/css/style.css', ['style']);
-	gulp.watch('app/scss/**/*.scss', ['base']);
 	gulp.watch('app/js/**/*.js', ['scripts']);
 	gulp.watch('app/**/*.jade', ['jade']);
 });
@@ -161,6 +145,6 @@ gulp.task('build', ['build:copy', 'build:remove']);
 // Main Tasks
 // ////////////////////////////////////////////////
 
-gulp.task('compile', ['scripts', 'base', 'style', 'jade']);
+gulp.task('compile', ['scripts', 'style', 'jade']);
 
-gulp.task('default', ['scripts', 'base', 'style', 'jade', 'serve', 'watch']);
+gulp.task('default', ['scripts', 'style', 'jade', 'serve', 'watch']);
