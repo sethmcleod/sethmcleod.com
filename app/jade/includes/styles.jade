@@ -1,13 +1,10 @@
 script.
   var cb = function() {
-    var b = document.createElement('link'),
-        s = document.createElement('link');
-    b.rel = 'stylesheet'; b.href = 'css/base.css';
+    var s = document.createElement('link'),
+        h = document.getElementsByTagName('head')[0]; 
     s.rel = 'stylesheet'; s.href = 'css/style.css';
-    var h = document.getElementsByTagName('head')[0]; 
-    h.appendChild(b); h.appendChild(s);
-  };
-  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-      webkitRequestAnimationFrame || msRequestAnimationFrame;
+    h.appendChild(s);
+  }, raf = requestAnimationFrame || mozRequestAnimationFrame ||
+  webkitRequestAnimationFrame || msRequestAnimationFrame;
   if (raf) raf(cb);
   else window.addEventListener('load', cb);
