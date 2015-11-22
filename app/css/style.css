@@ -59,8 +59,9 @@ p {
   color: #fff;
 }
 a, a:visited {
-    color: #333;
-    font-weight: 400;
+  color: #333;
+  font-weight: 400;
+  text-decoration: none;
 }
 .row:before, .row:after {
   content: '';
@@ -70,9 +71,36 @@ a, a:visited {
 .centered {
   text-align: center;
 }
-.hidden {
-  display: none !important;
-  visibility: hidden;
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1em;
+  clear: both;
+}
+h1 {
+  text-transform: initial;
+  padding: 1em 0 1em;
+  font-size: 1.6em;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1em 0 .5em;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 1em;
+  padding: .2em 0;
+  letter-spacing: 0;
+}
+h4 {
+  font-size: 1em;
+  padding: .5em 0 1em;
+}
+ul {
+  padding: 18px 10px;
+  list-style: none;
 }
 
 /* Banner */
@@ -87,7 +115,7 @@ a, a:visited {
   -webkit-font-smoothing: antialiased;
 }
 .banner.small {
-    padding: 20px 0 0;
+  padding: 20px 0 0;
 }
 .overlay {
   position: absolute;
@@ -401,33 +429,6 @@ a.btn.dark {
 a.btn.dark:hover, a.btn.dark:focus {
   background-color: #333;
   color: #fff;
-}
-
-/* Typography */
-h1 {
-  text-transform: initial;
-  padding: 1em 0 1em;
-  font-size: 1.6em;
-}
-h2 {
-  text-transform: uppercase;
-  font-weight: 400;
-  padding: 1em 0 .5em;
-  letter-spacing: 1px;
-  font-size: 1.2em;
-  line-height: 1;
-}
-h3 {
-  font-size: 1em;
-  padding: .2em 0;
-  letter-spacing: 0;
-}
-h4 {
-  font-size: 1em;
-  padding: .5em 0 1em;
-}
-ul {
-  padding: 18px 10px;
 }
 
 /* Images */
