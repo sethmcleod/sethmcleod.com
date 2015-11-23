@@ -34,8 +34,14 @@ header, aside {
 object {
   pointer-events: none;
 }
+img {
+  height: auto;
+  max-width: 100%;
+}
 hr {
+  height: 1px;
   margin: 2em 0;
+  border: none;
   background-color: #CCC;
 }
 pre {
@@ -550,24 +556,24 @@ nav.footer a:hover, nav.footer a:focus {
 }
 
 /* Colors */
-.blue-green .overlay, .blue-green .color-bar  {
+.blue-green .banner .overlay, .blue-green header .overlay, .blue-green .color-bar  {
   background: #1974BF;
   background: linear-gradient(45deg, #1974BF , #45B75F);
 }
-.green-blue .overlay, .green-blue .color-bar {
+.green-blue .banner .overlay, .green-blue header .overlay, .green-blue .color-bar {
   background: #21ACD2;
   background: linear-gradient(-45deg, #21ACD2 , #5DAD70);
 }
-.orange-yellow .overlay, .orange-yellow .color-bar {
+.orange-yellow .banner .overlay, .orange-yellow header .overlay, .orange-yellow .color-bar {
   opacity: .5;
   background: #FF8508;
   background: linear-gradient(to right, #FF8508 , #FFD637);
 }
-.purple-blue .overlay, .purple-blue .color-bar {
+.purple-blue .banner .overlay, .purple-blue header .overlay, .purple-blue .color-bar {
   background: #8359B9;
   background: linear-gradient(-45deg, #32ACBB , #8359B9);
 }
-.pink-orange .overlay, .pink-orange .color-bar {
+.pink-orange .banner .overlay, .pink-orange header .overlay, .pink-orange .color-bar {
   background: #FF8F2F;
   background: linear-gradient(45deg, #dd2476, #FF8F2F);
 }
