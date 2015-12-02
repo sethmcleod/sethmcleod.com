@@ -478,6 +478,7 @@ a.btn.dark:hover, a.btn.dark:focus {
 
 /* Footer */
 footer {
+  display: block;
   color: rgba(255,255,255,.4);
   background-color: #1f1f1f;
   -moz-osx-font-smoothing: grayscale;
