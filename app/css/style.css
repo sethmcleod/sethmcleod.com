@@ -49,6 +49,11 @@ pre {
   font-size: 12px;
   max-width: 500px;
   margin: auto;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  overflow: auto;
+  padding: 1.6em;
+  font-family: monospace;
 }
 p {
   line-height: 1.8em;
