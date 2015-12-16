@@ -56,7 +56,6 @@ pre {
   font-family: monospace;
 }
 p {
-  line-height: 1.8em;
   font-size: 1em;
   margin-bottom: 0;
   padding-bottom: 1.5em;
@@ -474,7 +473,7 @@ a.btn.dark:hover, a.btn.dark:focus {
 /* Page Content */
 .page-content {
   padding: 2em 1.5em 4em;
-  max-width: 1020px;
+  max-width: 860px;
   margin: 0 auto;
 }
 .page-content p {
@@ -662,7 +661,7 @@ nav.footer a:hover, nav.footer a:focus {
     max-width: 145px;
   }
   .page-content.centered p {
-    padding: 0 10% 1.5em;
+    padding-bottom: 1.5em;
   }
 }
 
@@ -692,7 +691,7 @@ nav.footer a:hover, nav.footer a:focus {
     font-size: 20px;
   }
   .page-content.centered p {
-    padding: 0 15% 1.5em;
+    padding-bottom: 1.5em;
   }
 }
 
