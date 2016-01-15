@@ -208,7 +208,7 @@ header .overlay, header .base {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .8;
+  opacity: .7;
   position: absolute;
   background-color: #000;
 }
@@ -289,7 +289,7 @@ header.fixed #header-inner {
   padding: 15px 0;
 }
 header.fixed #logo img, header.fixed #logo a {
-  max-height: 60px;
+  max-height: 50px;
 }
 header.fixed #main-nav {
   top: 5px;
