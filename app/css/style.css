@@ -294,6 +294,9 @@ header.fixed #logo img, header.fixed #logo a {
 header.fixed #main-nav {
   top: 5px;
 }
+header.fixed ul {
+  padding: 12px 10px;
+}
 
 /* Side Nav */
 #side-nav {
@@ -692,6 +695,10 @@ nav.footer a:hover, nav.footer a:focus {
   }
   .page-content.centered p {
     padding-bottom: 1.5em;
+  }
+  .page-content.full {
+    max-width: none;
+    padding: 2em 4em 4em;
   }
 }
 
