@@ -1,5 +1,8 @@
 (function() {
 
+  // remove no-fouc class
+  document.documentElement.removeAttribute('class');
+
   // clickable wrapper
   document.getElementById('wrapper').onclick = function() {
     document.getElementById('nav-toggle').checked = false;
