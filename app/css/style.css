@@ -608,6 +608,11 @@ nav.footer a:hover, nav.footer a:focus {
   span.time, span.location {
     display: none;
   }
+  nav.social a {
+    height: 2em;
+    width: 2em;
+    margin: 0 .8em;
+  }
 }
 
 @media (max-width: 820px) {
