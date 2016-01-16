@@ -339,18 +339,6 @@ header.fixed ul {
 #mobile-nav a:hover, #mobile-nav a:focus, #mobile-nav li.active a {
   color: #fff;
 }
-/* #mobile-nav ul li:last-child {
-  margin: 1em 0;
-}
-#mobile-nav ul li:last-child a {
-  border: 2px solid #fff;
-  padding: .6em 1.5em;
-  transition: background .1s 0s ease-in-out, color .1s 0s ease-in-out;
-}
-#mobile-nav ul li:last-child a:hover, #main-nav ul li:last-child a:focus {
-  background-color: #fff;
-  color: #353535;
-} */
 
 /* Main Nav */
 #main-nav {
@@ -396,21 +384,12 @@ header.fixed ul {
 #main-nav li a:hover, #main-nav li a:focus {
   color: #fff;
 }
-/* #main-nav li:not(:last-child) a:hover:after, #main-nav li:not(:last-child) a:focus:after {
+#main-nav li a:hover:after, #main-nav li a:focus:after {
   bottom: 5px;
   height: 2px;
   width: 50px;
   margin-left: -25px;
 }
-#main-nav ul li:last-child a {
-  color: #fff;
-  border: 2px solid #fff;
-  transition: background .1s 0s ease-in-out, color .1s 0s ease-in-out;
-}
-#main-nav ul li:last-child a:hover, #main-nav ul li:last-child a:focus {
-  background-color: #fff;
-  color: #353535;
-} */
 
 /* Buttons */
 a.btn {
