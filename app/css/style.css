@@ -470,47 +470,28 @@ footer {
   -webkit-font-smoothing: antialiased;
 }
 .footer-inner {
-  padding: 1.5em 0 1em;
-  text-align: center;
-  max-width: 1020px;
+  padding: 3em 0;
+}
+nav.social {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 0 20px;
+  max-width: 420px;
   margin: auto;
 }
-.footer-social {
-  padding: 2.5em 0 1.5em;
-}
-.footer-logo, .footer-nav {
-  padding: 1em 0;
-}
-.footer-nav a, nav.social a {
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: .8em;
-}
-.footer-logo img {
-  width: 60px;
-}
-nav.footer {
-  line-height: 1.4;
-}
 nav.social a {
+  opacity: .8;
   height: 1.5em;
   width: 1.5em;
   transition: opacity .1s 0s ease-in-out;
   background: url('/img/svg/mail.svg') bottom / cover no-repeat;
 }
 nav.social a:hover, nav.social a:focus {
-  opacity: .7;
-}
-nav.footer a, nav.social a {
-  margin: 0 .5em;
-  display: inline-block;
-}
-nav.footer a {
-  color: rgba(255,255,255,.7);
-  transition: color .1s 0s ease-in-out;
-}
-nav.footer a:hover, nav.footer a:focus {
-  color: #fff;
+  opacity: 1;
 }
 .color-bar {
   height: 10px;
