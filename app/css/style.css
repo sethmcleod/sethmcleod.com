@@ -28,6 +28,10 @@ small {
 ul li {
   list-style: inside;
 }
+ul {
+  padding: 0 10px;
+  list-style: none;
+}
 header, aside {
   display: block;
 }
@@ -107,10 +111,6 @@ h3 {
 h4 {
   font-size: 1em;
   padding: .5em 0 1em;
-}
-ul {
-  padding: 18px 10px;
-  list-style: none;
 }
 
 /* Banner */
@@ -455,7 +455,7 @@ a.btn.dark:hover, a.btn.dark:focus {
 
 /* Page Content */
 .page-content {
-  padding: 2em 1.5em 4em;
+  padding: 2em 2em 4em;
   max-width: 860px;
   margin: 0 auto;
 }
