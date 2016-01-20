@@ -4,23 +4,10 @@ mixin nav-item(name, url)
 footer
   .color-bar
   .footer-inner
-    .footer-logo
-      a(href="#header")
-        img(src="/img/logo.svg")
-    .footer-nav
-      nav.footer
-        +nav-item('Home', '/')
-        //- +nav-item('Blog', '/blog')
-        +nav-item('About', '/about')
-        +nav-item('Contact', '/contact')
-        +nav-item('Resume', '/resume')
-    .copyright
-      small &copy; 2016&nbsp;Seth Mcleod.&nbsp;All rights reserved.
-    .footer-social
-      nav.social
-        a(href="https://github.com/sethmcleod" target="_blank" style="background-image: url('/img/svg/github.svg')")
-        a(href="https://instagram.com/seth_mcleod" target="_blank" style="background-image: url('/img/svg/instagram.svg')") 
-        a(href="https://linkedin.com/profile/view?id=353748969" target="_blank" style="background-image: url('/img/svg/linkedin.svg')")
-        a(href="https://twitter.com/sthmcleod" target="_blank" style="background-image: url('/img/svg/twitter.svg')") 
-        a(href="http://codepen.io/sethmcleod/" target="_blank" style="background-image: url('/img/svg/codepen.svg')") 
-        a(href="mailto:sethmcleod@protonmail.com" style="background-image: url('/img/svg/mail.svg')") 
+    nav.social
+      a(href="https://github.com/sethmcleod" target="_blank" style="background-image: url('/img/svg/github.svg')")
+      a(href="https://instagram.com/seth_mcleod" target="_blank" style="background-image: url('/img/svg/instagram.svg')") 
+      a(href="https://linkedin.com/profile/view?id=353748969" target="_blank" style="background-image: url('/img/svg/linkedin.svg')")
+      a(href="https://twitter.com/sthmcleod" target="_blank" style="background-image: url('/img/svg/twitter.svg')") 
+      a(href="http://codepen.io/sethmcleod/" target="_blank" style="background-image: url('/img/svg/codepen.svg')") 
+      a(href="mailto:sethmcleod@protonmail.com" style="background-image: url('/img/svg/mail.svg')") 
