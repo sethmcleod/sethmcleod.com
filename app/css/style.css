@@ -330,6 +330,7 @@ header .overlay, header .base {
 /* Main Nav */
 #main-nav {
   padding-top: 20px;
+  padding-right: 15px;
   float: right;
   z-index: 100;
 }
