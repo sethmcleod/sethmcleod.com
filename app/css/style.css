@@ -490,6 +490,7 @@ nav.social a {
   opacity: .8;
   height: 1.5em;
   width: 1.5em;
+  position: relative;
   transition: opacity .1s 0s ease-in-out;
   background: url('/img/svg/mail.svg') bottom / cover no-repeat;
 }
@@ -588,6 +589,37 @@ nav.social a:hover, nav.social a:focus {
   }
   #logo img {
     max-height: 80px;
+  }
+  [data-hint]:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 100ms;
+    -webkit-transform: translateX(-50%) translateY(-8px);
+    -ms-transform: translateX(-50%) translateY(-8px);
+    transform: translateX(-50%) translateY(-8px);
+  }
+  [data-hint]:after {
+      content: attr(data-hint);
+      background: #383838;
+      color: #FFF;
+      padding: 8px 10px;
+      font-size: .75em;
+      line-height: 1;
+      white-space: nowrap;
+      position: absolute;
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 10;
+      pointer-events: none;
+      transition: .3s ease;
+      transition-delay: 0ms;
+      bottom: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   }
 }
 
