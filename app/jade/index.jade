@@ -1,5 +1,5 @@
 - var pageTitle = 'Home'
-- var subheading = 'Front End Developer'
+- var subheading = 'Designer & Developer'
 - var heading = 'Seth Mcleod'
 
 include includes/ascii.html
@@ -7,21 +7,97 @@ include includes/ascii.html
 doctype html
 html(lang="en")
   include includes/head
+  include includes/styles
   body.blue-green
-    include includes/side-nav
-    include includes/header
-    #wrapper
-      main(id="page" role="main")
-        #content
-          include includes/banner
-          section.page-content.centered
-            h1 Hello there
-            p I'm very passionate about the web and I want to make it easier to use and a better experience for every person on every device. I enjoy problem solving, tackling challenges and learning new things.
-            p My favorite language to work with is JavaScript. I'm really excited with how it's changing the web and how we use it, and can't wait to see what new tools, libraries, and methodologies are going to pop up in the near future.
-            h2 #[a(href="https://www.codementor.io/seth" target="_blank") Code Mentoring]
-            p Need help with your web project? I'm currently providing #[a(href="https://www.codementor.io/seth" target="_blank") 1 on 1 mentoring] for topics like Javascript, jQuery, HTML5/CSS3, and User-Experience. If you have a problem you need help with, or just want some insight on the best way to move forward with a project, get in touch! I'm very excited to give back to the community and help out wherever I can. 
-            hr
-            h2 Heads up
-            p This site is currently a work in progress, which I'm constantly refining and updating. You can check out the source code on #[a(href="https://github.com/sethmcleod/sethmcleod.com" target="_blank") GitHub]. In the meantime, you can read more #[a(href="/about") about me], or check out my #[a(href="/resume") skill set and experience].
-      include includes/footer
-    include includes/scripts
+    main(id="page" role="main")
+      #content
+        include includes/banner
+        section.page-content
+          h1 Hello there
+          p.
+            I'm a self-taught designer and front-end developer who loves solving
+            problems, tackling challenges and learning new things. Design and
+            quality user experiences are two things I'm really passionate about.
+            I want to empower people and make the internet fun and easy to use.
+            The small details matter. 
+          p.
+            Currently I run #[a(href="https://mcleod.studio" target="_blank") Mcleod Studio],
+            a creative agency that handles design, development, and everything
+            in between. I also work with a few great companies, like:
+            #[a(href="https://gigster.com" target="_blank") Gigster],
+            #[a(href="https://bouncelab.io" target="_blank") Bouncelab],
+            #[a(href="https://hubnative.com" target="_blank") Hub Native] and
+            #[a(href="https://codementor.io/seth" target="_blank") Codementor].
+          p If you think I can help your team, #[a(href="mailto:me@sethmcleod.com") reach out] and let's talk!
+          hr
+            
+          h1 A short bio
+          p.
+            I graduated high school at 15 and ran my own graphic design company
+            for the next 3 years. Since then I've worked with multiple startups
+            and filled a number of different roles, from designing digital
+            menus for restaurants to installing security systems, all the while
+            taking on freelance design and development gigs. I've got experience
+            with branding, graphic/web design, networking and IT tech, and most
+            recently full-stack development with a focus on front-end. 
+          p.
+            I have a good understanding of UX/UI and the latest patterns and
+            best practices. CSS is my forte and I'm familiar with preprocessors
+            like Sass and Less, as well as frameworks like Bootstrap, Skeleton,
+            Semantic UI and PureCSS. I understand JavaScript language fundamentals
+            and best practices, and I'm comfortable working with most libraries
+            like React, Redux, and jQuery. I enjoy working with others, especially
+            in a development setting, and have a hard-coded desire to push myself.
+            I see my major strengths being my creativity, flexibility and
+            attention to detail.
+          hr
+            
+          h1 My daily life
+          p.
+            I live in the mountains of North Carolina, near Asheville, with my
+            fiancée #[a(href="https://instagram.com/bekahlovesgreen") Bekah], our
+            grumpy cat Daisy, our (even grumpier) hedgehog
+            #[a(href="https://www.instagram.com/p/BQfzzmLjsaX" target="_blank") Felix]
+            and two yet-to-be-named bunnies. We generally spend our time hiking,
+            longboarding, bingeing netflix or enjoying the life and food of Asheville.
+            When I'm not starting at a computer screen, I like to sketch, listen
+            to music, play video games and (sometimes) cook. Here are some
+            pictures in case you're nosey.
+          .images
+            a(href="https://instagram.com/p/4AapMLDE15" target="_blank")
+              figure
+                .overlay
+                img(src="/img/insta/1.jpg")
+            a(href="https://instagram.com/p/wt-zffDE3h" target="_blank")
+              figure
+                .overlay
+                img(src="/img/insta/2.jpg")
+            a(href="https://instagram.com/p/rux-FrDEyp" target="_blank")
+              figure
+                .overlay
+                img(src="/img/insta/3.jpg")
+            a(href="https://instagram.com/p/wz6rlujEyH" target="_blank")
+              figure
+                .overlay
+                img(src="/img/insta/4.jpg")
+            a(href="https://instagram.com/p/2ErhYlOmPs" target="_blank")
+              figure
+                .overlay
+                img(src="/img/insta/5.jpg")
+            a(href="https://instagram.com/p/0hEynSDExA" target="_blank")
+              figure
+                .overlay
+                img(src="/img/insta/6.jpg")
+            a(href="https://instagram.com/p/zGUYN7jE51" target="_blank")
+              figure
+                .overlay
+                img(src="/img/insta/7.jpg")
+            a(href="https://instagram.com/p/BAnReJWjE4t" target="_blank")
+              figure
+                .overlay
+                img(src="/img/insta/8.jpg")
+                  
+          .buttons
+            a.btn.dark(href="mailto:me@sethmcleod.com") Say Hello
+    include includes/footer
+  include includes/scripts
