@@ -4,6 +4,7 @@
   "description": "Personal Website",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Seth Mcleod <me@sethmcleod.com>",
