@@ -1,6 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic');
 
+/* Fonts */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/fonts/icomoon.eot?l2jvbw');
+  src:  url('/fonts/icomoon.eot?l2jvbw#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?l2jvbw') format('truetype'),
+    url('/fonts/icomoon.woff?l2jvbw') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-'], [class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter::before {
+  content: '\f099';
+}
+.icon-linkedin::before {
+  content: '\f0e1';
+}
+.icon-github::before {
+  content: '\f113';
+}
+.icon-instagram::before {
+  content: '\f16d';
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-codepen::before {
+  content: '\f1cb';
+}
+.icon-mail::before {
+  content: '\f1d8';
+}
+.icon-angellist::before {
+  content: '\f209';
+}
+
 /* Reset */
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {margin: 0;padding: 0;border: 0;font: inherit;vertical-align: baseline;}
 
@@ -10,7 +62,7 @@ body {
   line-height: 1.75;
   font-size: 16px;
   font-weight: 300;
-  font-family: "Open Sans",sans-serif;
+  font-family: 'Open Sans',sans-serif;
   background: #fbfbfb;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -35,8 +87,10 @@ img {
   max-width: 100%;
 }
 hr {
-  margin: 4rem 0;
+  margin: 2.5rem 0;
   border: none;
+  height: 1px;
+  background: #e0e0e0;
 }
 pre {
   background: #ededed;
@@ -248,21 +302,25 @@ footer {
 nav.social {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0 20px;
   max-width: 420px;
   margin: auto;
 }
 nav.social a {
-  opacity: .8;
   height: 1.5em;
   width: 1.5em;
   position: relative;
-  transition: opacity .1s 0s ease-in-out;
-  background: url('/img/svg/mail.svg') bottom / cover no-repeat;
 }
-nav.social a:hover, nav.social a:focus {
+nav.social a i {
+  opacity: .8;
+  color: white;
+  font-size: 1.5em;
+  transition: opacity .1s 0s ease-in-out;
+}
+nav.social a:hover i,
+nav.social a:focus i {
   opacity: 1;
 }
 .color-bar {
@@ -304,7 +362,7 @@ nav.social a:hover, nav.social a:focus {
     font-size: 18px;
   }
   hr {
-    margin: 6rem 0;
+    margin: 4rem 0;
   }
   .banner {
     padding: 80px 0 60px;
