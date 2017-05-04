@@ -58,7 +58,7 @@ gulp.task('scripts', function() {
 	.pipe(rename('scripts.min.js'))
 	.pipe(sourcemaps.write('../maps'))
 	.pipe(gulp.dest('./app/js/'))
-	.pipe(reload({stream:true}));
+	.pipe(reload({ stream: true }));
 });
 
 
@@ -74,7 +74,7 @@ gulp.task('style', function() {
 	}))
 	.pipe(sourcemaps.write('../maps'))
 	.pipe(gulp.dest('app/css'))
-	.pipe(reload({stream:true}));
+	.pipe(reload({ stream: true }));
 });
 
 
@@ -88,7 +88,7 @@ gulp.task('jade', function() {
 		pretty: true
 	}))
 	.pipe(gulp.dest('app/'))
-	.pipe(reload({stream:true}));
+	.pipe(reload({ stream: true }));
 });
 
 
@@ -138,13 +138,13 @@ gulp.task('build:remove', ['build:copy'], function (cb) {
 	del(config.buildRemove, cb);
 });
 
-gulp.task('build', ['build:copy', 'build:remove']);
+gulp.task('build', ['build:remove']);
 
 
 // ////////////////////////////////////////////////
 // Main Tasks
 // ////////////////////////////////////////////////
 
-gulp.task('compile', ['scripts', 'style', 'jade']);
+gulp.task('compile', ['scripts', 'style', 'jade', 'build']);
 
 gulp.task('default', ['scripts', 'style', 'jade', 'serve', 'watch']);
