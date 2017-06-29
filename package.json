@@ -10,15 +10,15 @@
   "author": "Seth Mcleod <me@sethmcleod.com>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.7.13",
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-jade": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.3",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0"
+    "browser-sync": "2.7.13",
+    "del": "1.2.0",
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "2.3.1",
+    "gulp-concat": "2.6.0",
+    "gulp-jade": "1.0.1",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.0.3",
+    "gulp-sourcemaps": "1.5.2",
+    "gulp-uglify": "1.2.0"
   }
 }
