@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
+    "build": "gulp compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Seth Mcleod <me@sethmcleod.com>",
