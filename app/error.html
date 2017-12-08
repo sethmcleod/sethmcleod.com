@@ -1,0 +1,57 @@
+<!--
+ __  __  ___  __    ____  _____  ____
+(  \/  )/ __)(  )  ( ___)(  _  )(  _ \
+ )    (( (__  )(__  )__)  )(_)(  )(_) )
+(_/\/\_)\___)(____)(____)(_____)(____/
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Seth Mcleod - Designer &amp; Engineer</title>
+    <meta name="description" content="I design and build quality web experiences.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.documentElement.className = 'hidden';
+      function ready(callback){
+        // in case the document is already rendered
+        if (document.readyState!='loading') callback();
+        // modern browsers
+        else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+        // IE <= 8
+        else document.attachEvent('onreadystatechange', function(){
+          if (document.readyState=='complete') callback();
+        });
+      }
+      ready(function() {
+        document.documentElement.classList.remove('hidden');
+      });
+    </script>
+  </head>
+  <body class="blue-green">
+    <main id="page" role="main">
+      <div id="content">
+        <section id="banner" class="banner">
+          <div class="overlay"></div>
+          <figure style="background: url('/img/banner-home.jpg') center 0% / cover no-repeat;" class="thumnail"></figure>
+          <div class="description">
+            <p><em>Page Not Found</em></p>
+            <p><strong>404</strong></p>
+          </div>
+        </section>
+        <section class="page-content">
+          <div class="buttons"><a href="/" class="btn dark">Go Home</a></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="color-bar"></div>
+      <div class="footer-inner">
+        <nav class="social"><a href="https://dribbble.com/sethm" target="_blank" data-hint="Dribbble"><i class="icon-dribbble"></i></a><a href="https://github.com/sethmcleod" target="_blank" data-hint="Github"><i class="icon-github"></i></a><a href="https://linkedin.com/in/sethmcleod" target="_blank" data-hint="LinkedIn"><i class="icon-linkedin"></i></a><a href="https://twitter.com/mcleodstudio" target="_blank" data-hint="Twitter"><i class="icon-twitter"></i></a><a href="https://instagram.com/mcleod.studio" target="_blank" data-hint="Instagram"><i class="icon-instagram"></i></a><a href="http://codepen.io/sethmcleod" target="_blank" data-hint="CodePen"><i class="icon-codepen"></i></a><a href="mailto:me@sethmcleod.com" id="email" data-hint="me@sethmcleod.com"><i class="icon-mail"></i></a></nav>
+      </div>
+    </footer>
+  </body>
+</html>
