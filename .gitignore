@@ -1,24 +1,13 @@
-# Packages #
-############
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-
-# Logs and DBs #
-################
+.cache/
+.parcel-cache/
+coverage/
+dist/*
+node_modules/
 *.log
-*.sql
-*.sqlight
+src/index.*.css
+src/index.*.css.map
 
-
-# OS Generated Files #
-######################
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -26,19 +15,3 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-*.psd
-*.ai
-
-# Build Systems #
-#################
-node_modules/
-app/bower_components/
-.sass-cache
-build/
-dist/
-maps/
-
-app/index.html
-app/about.html
-app/contact.html
-app/resume.html
