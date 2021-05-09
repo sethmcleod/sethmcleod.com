@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.book {
-	margin: 0 auto;
-	max-width: 260px;
-}
-
 a {
 	background: linear-gradient(to bottom, #9CA3AF 0%, #9CA3AF 100%);
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	background-size: 1px 1px;
 	text-decoration: none;
+	font-style: italic;
+	font-weight: 500;
 }
 
 a:hover {
